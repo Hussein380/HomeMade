@@ -31,6 +31,7 @@ Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.2.1
 future==0.18.2
 greenlet==3.1.1
+gunicorn==23.0.0
 gyp==0.1
 httplib2==0.20.2
 idna==3.3
@@ -55,6 +56,7 @@ mysqlclient==2.2.4
 netifaces==0.11.0
 oauthlib==3.2.0
 olefile==0.46
+packaging==24.1
 paramiko==2.9.3
 pexpect==4.8.0
 Pillow==9.0.1
