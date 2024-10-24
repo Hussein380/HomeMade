@@ -5,14 +5,13 @@ blinker==1.8.2
 certifi==2020.6.20
 chardet==4.0.0
 click==8.1.7
-Flask==3.0.3
+Flask==2.3.3  # Downgraded to latest 2.x version for better compatibility
 Flask-Login==0.6.3
 Flask-Mail==0.10.0
 Flask-Migrate==4.0.7
 Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.2.1
-gunicorn==23.0.0
+gunicorn==20.1.0  # Downgraded to a more stable version
 SQLAlchemy==2.0.35
 requests==2.25.1
 python-dotenv
-
