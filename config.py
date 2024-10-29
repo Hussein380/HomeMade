@@ -2,16 +2,18 @@
 
 import os
 from dotenv import load_dotenv
-# load environment variables form .env
+
+# Load environment variables from .env
 load_dotenv()
 
 
 class Config:
     # Flask configuration
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'defualt-secret-key')
-    
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'default-secret-key')
+
     # SQLAlchemy configuration
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', 'default_database_url')
+    # Use a valid SQLite URI or leave it empty if you want to avoid fallback
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///:memory:'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Flask email configuration
@@ -25,4 +27,4 @@ class Config:
     MAIL_DEFAULT_SENDER = os.environ.get('MAIL_USERNAME')
 
     SECURITY_RECOVERABLE = True
-    
+
