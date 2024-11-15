@@ -1,0 +1,3 @@
+build-essential
+libmysqlclient-dev
+python3-dev
