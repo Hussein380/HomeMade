@@ -7,6 +7,7 @@ chardet==4.0.0
 charset-normalizer==3.4.0
 click==8.1.7
 cryptography==3.4.8
+Cython==0.29.32
 distlib==0.3.4
 dnspython==2.6.1
 email_validator==2.2.0
